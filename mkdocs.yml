@@ -1,0 +1,59 @@
+site_name: GeCoBar - Manuale Funzionale
+site_description: Manuale funzionale del gestionale GeCoBar per bar e tabaccherie
+site_author: Antonio Iacona
+site_url: https://aiacona65.github.io/gecobar-manuale/
+
+repo_url: https://github.com/aiacona65/gecobar-manuale
+repo_name: aiacona65/gecobar-manuale
+
+theme:
+  name: material
+  language: it
+  palette:
+    - scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Modalita chiara
+    - scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Modalita scura
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: it
+
+copyright: "Copyright Antonio Iacona - GeCoBar software originale. Tutti i diritti riservati."
+
+nav:
+  - Home: index.md
+  - "1. Cosè GeCoBar™": "cap01-1-cosè-gecobar.md"
+  - "2. Accesso e sicurezza": "cap02-2-accesso-e-sicurezza.md"
+  - "3. Struttura dellapplicazione": "cap03-3-struttura-dellapplicazione.md"
+  - "4. Modulo Cassa giornaliera": "cap04-4-modulo-cassa-giornaliera.md"
+  - "5. Modulo Consultazioni e Statistiche": "cap05-5-modulo-consultazioni-e-statistiche.md"
+  - "6. Modulo Statistiche": "cap06-6-modulo-statistiche.md"
+  - "7. Analisi di dettaglio - la navigazione dal dato sintetico al particolare": "cap07-7-analisi-di-dettaglio-la-navigazione-dal-dato-sin.md"
+  - "8. Modulo Appuntamenti e Contabilità": "cap08-8-modulo-appuntamenti-e-contabilità.md"
+  - "9. Modulo Dipendenti": "cap09-9-modulo-dipendenti.md"
+  - "10. Modulo Gestione Documentale": "cap10-10-modulo-gestione-documentale.md"
+  - "11. Modulo Magazzino": "cap11-11-modulo-magazzino.md"
+  - "12. Tabelle di configurazione": "cap12-12-tabelle-di-configurazione.md"
+  - "13. Procedure di servizio": "cap13-13-procedure-di-servizio.md"
+  - "14. Ringraziamento": "cap14-14-ringraziamento.md"
