@@ -11,49 +11,64 @@ theme:
   language: it
   palette:
     - scheme: default
-      primary: blue
-      accent: orange
+      primary: custom
+      accent: deep orange
       toggle:
         icon: material/brightness-7
-        name: Modalita chiara
+        name: Modalita scura
     - scheme: slate
-      primary: blue
-      accent: orange
+      primary: custom
+      accent: deep orange
       toggle:
         icon: material/brightness-4
-        name: Modalita scura
+        name: Modalita chiara
   features:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.indexes
     - search.highlight
     - search.suggest
+    - search.share
     - toc.follow
+    - content.code.copy
+    - header.autohide
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter
+    code: JetBrains Mono
   icon:
     repo: fontawesome/brands/github
+    logo: material/book-open-page-variant
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search:
       lang: it
 
-copyright: "Copyright Antonio Iacona - GeCoBar software originale. Tutti i diritti riservati."
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/aiacona65
+      name: GitHub di Antonio Iacona
+  generator: false
+
+copyright: "&copy; 2025 Antonio Iacona &mdash; GeCoBar&trade; software originale. Tutti i diritti riservati."
 
 nav:
   - Home: index.md
-  - "1. Cosè GeCoBar™": "cap01-1-cosè-gecobar.md"
+  - "1. Cos e GeCoBar": "cap01-1-cosè-gecobar.md"
   - "2. Accesso e sicurezza": "cap02-2-accesso-e-sicurezza.md"
-  - "3. Struttura dellapplicazione": "cap03-3-struttura-dellapplicazione.md"
-  - "4. Modulo Cassa giornaliera": "cap04-4-modulo-cassa-giornaliera.md"
-  - "5. Modulo Consultazioni e Statistiche": "cap05-5-modulo-consultazioni-e-statistiche.md"
-  - "6. Modulo Statistiche": "cap06-6-modulo-statistiche.md"
-  - "7. Analisi di dettaglio - la navigazione dal dato sintetico al particolare": "cap07-7-analisi-di-dettaglio-la-navigazione-dal-dato-sin.md"
-  - "8. Modulo Appuntamenti e Contabilità": "cap08-8-modulo-appuntamenti-e-contabilità.md"
-  - "9. Modulo Dipendenti": "cap09-9-modulo-dipendenti.md"
-  - "10. Modulo Gestione Documentale": "cap10-10-modulo-gestione-documentale.md"
-  - "11. Modulo Magazzino": "cap11-11-modulo-magazzino.md"
-  - "12. Tabelle di configurazione": "cap12-12-tabelle-di-configurazione.md"
+  - "3. Struttura applicazione": "cap03-3-struttura-dellapplicazione.md"
+  - "4. Modulo Cassa": "cap04-4-modulo-cassa-giornaliera.md"
+  - "5. Consultazioni": "cap05-5-modulo-consultazioni-e-statistiche.md"
+  - "6. Statistiche": "cap06-6-modulo-statistiche.md"
+  - "7. Analisi di dettaglio": "cap07-7-analisi-di-dettaglio-la-navigazione-dal-dato-sin.md"
+  - "8. Appuntamenti e Contabilita": "cap08-8-modulo-appuntamenti-e-contabilità.md"
+  - "9. Dipendenti": "cap09-9-modulo-dipendenti.md"
+  - "10. Gestione Documentale": "cap10-10-modulo-gestione-documentale.md"
+  - "11. Magazzino": "cap11-11-modulo-magazzino.md"
+  - "12. Tabelle configurazione": "cap12-12-tabelle-di-configurazione.md"
   - "13. Procedure di servizio": "cap13-13-procedure-di-servizio.md"
   - "14. Ringraziamento": "cap14-14-ringraziamento.md"
