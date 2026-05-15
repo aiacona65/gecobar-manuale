@@ -1,0 +1,254 @@
+/* ═══════════════════════════════════════════════════════════
+   GeCoBar™ — Stile personalizzato professionale
+   Antonio Iacona
+═══════════════════════════════════════════════════════════ */
+
+/* ── Font Google ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ── Variabili colore ── */
+:root {
+  --gecobar-blue:       #1565C0;
+  --gecobar-blue-dark:  #0D47A1;
+  --gecobar-blue-light: #E3F2FD;
+  --gecobar-orange:     #E65100;
+  --gecobar-text:       #212121;
+  --gecobar-text-light: #546E7A;
+  --gecobar-border:     #CFD8DC;
+  --gecobar-bg:         #FAFAFA;
+  --gecobar-card:       #FFFFFF;
+  --gecobar-shadow:     0 2px 8px rgba(0,0,0,0.10);
+}
+
+/* ── Body e testo ── */
+.md-content {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--gecobar-text);
+}
+
+/* ── Titolo principale H1 ── */
+.md-content h1 {
+  font-family: 'Merriweather', serif !important;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gecobar-blue-dark);
+  border-bottom: 3px solid var(--gecobar-blue);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+/* ── Titoli H2 ── */
+.md-content h2 {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--gecobar-blue);
+  border-left: 4px solid var(--gecobar-blue);
+  padding-left: 0.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Titoli H3 ── */
+.md-content h3 {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gecobar-orange);
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+/* ── Paragrafi ── */
+.md-content p {
+  text-align: justify;
+  hyphens: auto;
+  margin-bottom: 1rem;
+  color: var(--gecobar-text);
+}
+
+/* ── Liste ── */
+.md-content ul li,
+.md-content ol li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+}
+
+.md-content ul {
+  padding-left: 1.5rem;
+}
+
+.md-content ul li::marker {
+  color: var(--gecobar-blue);
+}
+
+/* ── Immagini ── */
+.md-content img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border: 1px solid var(--gecobar-border);
+}
+
+/* ── Didascalie figure (em dopo img) ── */
+.md-content img + em,
+.md-content p > em:only-child {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gecobar-text-light);
+  margin-top: -0.8rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* ── Box nota azzurra ── */
+.md-content blockquote {
+  background: var(--gecobar-blue-light);
+  border-left: 4px solid var(--gecobar-blue);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  color: #1A237E;
+  font-size: 0.95rem;
+}
+
+.md-content blockquote p {
+  margin: 0;
+  text-align: left;
+}
+
+/* ── Tabelle ── */
+.md-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  box-shadow: var(--gecobar-shadow);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-content table th {
+  background: var(--gecobar-blue);
+  color: #FFFFFF;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.md-content table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--gecobar-border);
+  color: var(--gecobar-text);
+}
+
+.md-content table tr:nth-child(even) td {
+  background: var(--gecobar-blue-light);
+}
+
+.md-content table tr:hover td {
+  background: #E1F5FE;
+}
+
+/* ── Testo in grassetto ── */
+.md-content strong {
+  color: var(--gecobar-blue-dark);
+  font-weight: 600;
+}
+
+/* ── Intestazione sito ── */
+.md-header {
+  background: linear-gradient(135deg, var(--gecobar-blue-dark) 0%, var(--gecobar-blue) 100%) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2) !important;
+}
+
+.md-header__title {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  letter-spacing: 0.5px;
+}
+
+/* ── Navigazione laterale ── */
+.md-nav__title {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--gecobar-blue-dark) !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.md-nav__link {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.88rem !important;
+  color: var(--gecobar-text) !important;
+  padding: 0.3rem 0.5rem !important;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+  color: var(--gecobar-blue) !important;
+  background: var(--gecobar-blue-light);
+}
+
+.md-nav__link--active {
+  color: var(--gecobar-blue) !important;
+  font-weight: 600 !important;
+  background: var(--gecobar-blue-light);
+}
+
+/* ── Area contenuto principale ── */
+.md-content__inner {
+  padding: 2rem 2.5rem;
+  max-width: 860px;
+}
+
+/* ── Footer ── */
+.md-footer {
+  background: var(--gecobar-blue-dark) !important;
+}
+
+.md-footer-meta {
+  background: #0A2F6E !important;
+}
+
+/* ── Bottoni prev/next ── */
+.md-footer__link {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* ── Separatore orizzontale ── */
+.md-content hr {
+  border: none;
+  border-top: 2px solid var(--gecobar-border);
+  margin: 2rem 0;
+}
+
+/* ── TOC (indice pagina) ── */
+.md-nav--secondary .md-nav__link {
+  font-size: 0.82rem !important;
+}
+
+/* ── Chip/badge per versione ── */
+.md-header__topic {
+  font-weight: 500 !important;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .md-content__inner {
+    padding: 1rem;
+  }
+  .md-content h1 {
+    font-size: 1.5rem;
+  }
+}
